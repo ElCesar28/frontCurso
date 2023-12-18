@@ -11,6 +11,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
+}
+
+#root{
+  width: 100%;
 }
 
 a {
@@ -33,6 +39,10 @@ body {
 h1 {
   font-size: 7.2em;
   line-height: 1.1;
+}
+
+h1,h2,h3,h4,h5{
+  margin: 0;;
 }
 
 button {
@@ -65,4 +75,56 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.full{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.modal-container{
+  width: 100%;
+  height:100%;
+  position: absolute;
+  background-color: #1a1a1a86;
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal{
+  width: 600px;
+  height: 400px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.col{
+  display: flex ;
+  flex-direction: column;
+}
+
+.card-container{
+  width: 290px;
+  height: 170px;
+  padding: 10px;
+}
+.card{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
